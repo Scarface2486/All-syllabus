@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subject Details - B.Tech IT Syllabus | SINCET</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Floating background elements -->
+    <div class="floating-elements">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+    </div>
+    
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>SINCET IT Syllabus</h1>
+                    <p>B.Tech Information Technology</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Home link -->
+        <a href="../index.html" class="home-link">
+            <i class="fas fa-arrow-left"></i> Back to All Subjects
+        </a>
+
+        <div id="subjectContent">
+            <div class="loading">
+                <div style="margin-bottom: 20px;">
+                    <i class="fas fa-spinner fa-spin fa-2x"></i>
+                </div>
+                Loading subject details...
+            </div>
+        </div>
+                <div class="copyright">
+                    <p>&copy; B.Tech Information Technology Student | Developed by S.Vishva</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Syllabus data
+        const syllabusData = {
+            "CS3452": {
+                code: "CS3452",
+                name: "Theory of Computation (TOC)",
+                overview: "The syllabus is divided into five key units: Automata and Regular Expressions, Regular Expressions and Languages, Context-Free Grammar (CFG) and Push Down Automata (PDA), Normal Forms and Turing Machines, and Undecidability.",
+                units: [
+                    {
+                        title: "Unit I: Automata and Regular Expressions",
+                        content: "Covers finite automata, including Deterministic (DFA) and Non-deterministic (NFA) types, their equivalence, and minimization of DFAs."
+                    },
+                    {
+                        title: "Unit II: Regular Expressions and Languages",
+                        content: "Focuses on defining patterns using regular expressions, proving non-regularity with the Pumping Lemma, and exploring closure properties."
+                    },
+                    {
+                        title: "Unit III: Context-Free Grammar (CFG) and Push Down Automata (PDA)",
+                        content: "Introduces Chomsky's hierarchy, derivations, parse trees, and the design of PDAs to recognize context-free languages."
+                    },
+                    {
+                        title: "Unit IV: Normal Forms and Turing Machines",
+                        content: "Discusses simplification of CFGs (CNF/GNF), the Turing Machine (TM) model as a universal computer, and programming techniques for TMs."
+                    },
+                    {
+                        title: "Unit V: Undecidability",
+                        content: "Explores unsolvable problems (PCP/MPCP), universal Turing machines, and the classification of tractable (P) and intractable (NP) problems."
+                    }
+                ],
+                lab: null
+            },
+            "CS3491": {
+                code: "CS3491",
+                name: "Artificial Intelligence and Machine Learning",
+                overview: "Friday 1 Hour Only",
+                units: [
+                    {
+                        title: "Unit I : PROBLEM SOLVING",
+                        content: "Introduction to AI - AI Applications - Problem Solving Agents - Search Algorithms - Uninformed Search Strategies - Heuristic Search Stratergies - Local Search and Optimization Problems - Adversarial Search - ConstraintSatisfaction Problems (CSP)."
+                    },
+                    {
+                        title: "Unit II : PROBABILISTIC REASONING",
+                        content: "Acting Under Uncertainty - Bayesian Inference - Naive Bayes Models. Probabilistic Reasoning - Bayesian Networks - Exact Inference in BN - Approximate Inference in BN - Causal Networks."
+                    },
+                    {
+                        title: "Unit III : SUPERVISED LEARNING",
+                        content: "Introducion to Machine Learning - Linear Regression Models : Least Squares , Single & Multile Variables , Bayesian Linear Regression , Gradient Descent , Linear Classification Models : Discriminant Function - Probabilistic Discriminant Model - Logistic Regression , Probabilistic Generative Model - Naive Bayes , Maximum Margin Classifier - Support Vector Machine , Decision Tree , Random Forests."
+                    },
+                    {
+                        title: "Unit IV : ENSEMBLE TECHNIQUES AND UNSUPERVISED LEARNING",
+                        content: "Combining Multiple Learners : Model Combination Schemes , Voting , Ensemble Learning - Bagging , Boosting , Stacking , Unsupervised Learning : K-means , Instance Based Learning : KNN , Gaussian Mixturemodels and Expectation Maximization."
+                    },
+                    {
+                        title: "Unit V : NEURAL NETWORKS",
+                        content: "Perceptron - Multilayer Perceptron , Activation Functions , Network Training - Gradient Descent Optimization - Stochastic Gradient Descent , Error Backpropagation , from Shallow Networks to Deep Networks - Unit Saturation (aka the vanishing gradient problem) - ReLU , Hyperparameter Tuning , Batchnormalization , Regularization , Dropout."
+                    }
+                ],
+                lab: null
+            },
+            "CS3492": {
+                code: "CS3492",
+                name: "Database Management Systems",
+                overview: "The curriculum is divided into five key units covering relational databases, design, transactions, implementation, and advanced topics.",
+                units: [
+                    {
+                        title: "Unit I: Relational Databases",
+                        content: "Covers the fundamental architecture of DBMS, data models, relational algebra, and SQL (Structured Query Language), including advanced, embedded, and dynamic SQL."
+                    },
+                    {
+                        title: "Unit II: Database Design",
+                        content: "Focuses on the Entity-Relationship (ER) model, ER diagrams, and the principles of normalization (1NF through 5NF and BCNF) to ensure data integrity and reduce redundancy."
+                    },
+                    {
+                        title: "Unit III: Transactions",
+                        content: "Explores transaction concepts like ACID properties, concurrency control (locking protocols), and recovery techniques such as shadow paging and the ARIES algorithm."
+                    },
+                    {
+                        title: "Unit IV: Implementation Techniques",
+                        content: "Details storage structures like RAID and file organization, as well as indexing (B+ trees, B trees) and query processing/optimization using heuristics."
+                    },
+                    {
+                        title: "Unit V: Advanced Topics",
+                        content: "Introduces modern trends like Distributed Databases, NoSQL (Document, Key-value, Column-based, Graph databases), CAP Theorem, and database security measures like SQL injection prevention."
+                    }
+                ],
+                lab: null
+            },
+            "IT3401": {
+                code: "IT3401",
+                name: "Web Essentials",
+                overview: "The syllabus is divided into five key units covering web fundamentals, client-side and server-side technologies, and practical implementation.",
+                units: [
+                    {
+                        title: "Unit I: Website Basics",
+                        content: "Covers internet fundamentals, protocols (HTTP, TCP/IP), URLs, domain names, web browsers, servers, and the working principles of websites."
+                    },
+                    {
+                        title: "Unit II: Web Designing",
+                        content: "Focuses on HTML (form elements, media) and CSS3 (selectors, box model, animations, and multi-column layouts)."
+                    },
+                    {
+                        title: "Unit III: Client-Side Scripting",
+                        content: "Introduces JavaScript, covering variables, data types, event handling, validation, and debugging."
+                    },
+                    {
+                        title: "Unit IV: Server-Side Scripting (PHP)",
+                        content: "Teaches PHP working principles, file handling, email basics, and database integration with PHP."
+                    },
+                    {
+                        title: "Unit V: Servlets and Database Connectivity",
+                        content: "Explores Java Servlet architecture, life cycle, session tracking (cookies), and database connectivity using JDBC."
+                    }
+                ],
+                lab: "The laboratory portion includes 30 periods of hands-on practice, focusing on: Website Design: Creating interactive sites using HTML and authoring tools. Validation: Using JavaScript for client-side form validation. Backend Scripts: Writing PHP scripts for data processing. Multimedia: Handling images, videos, and audio in web pages. Java Servlets: Developing applications with session tracking and JDBC for information retrieval systems."
+            },
+            "CS3451": {
+                code: "CS3451",
+                name: "Introduction to Operating Systems",
+                overview: "The syllabus is divided into five main units covering OS fundamentals, process management, memory management, storage, and virtualization.",
+                units: [
+                    {
+                        title: "Unit I: Introduction",
+                        content: "Covers computer system organization, OS objectives (convenience, efficiency), evolution, structures (services, system calls, system programs), and design/implementation methods."
+                    },
+                    {
+                        title: "Unit II: Process Management",
+                        content: "Focuses on process concepts, CPU scheduling algorithms, multithreading models, process synchronization (critical-section, semaphores, monitors), and deadlock handling (prevention, avoidance, detection)."
+                    },
+                    {
+                        title: "Unit III: Memory Management",
+                        content: "Discusses main memory allocation (paging, segmentation), swapping, and virtual memory techniques like demand paging, page replacement, and thrashing."
+                    },
+                    {
+                        title: "Unit IV: Storage Management",
+                        content: "Explores mass storage structures, disk scheduling, file-system interfaces (access methods, directory structure), and I/O kernel subsystems."
+                    },
+                    {
+                        title: "Unit V: Virtual Machines and Mobile OS",
+                        content: "Introduces virtualization history and implementations, and provides a comparative look at mobile operating systems like iOS and Android."
+                    }
+                ],
+                lab: null
+            },
+            "GE3451": {
+                code: "GE3451",
+                name: "Environmental Sciences and Sustainability",
+                overview: "The syllabus is divided into five core units covering environment, pollution, renewable energy, sustainability concepts, and practices.",
+                units: [
+                    {
+                        title: "Unit I: Environment and Biodiversity",
+                        content: "Covers ecosystem structure, energy flow (food chains/webs), ecological succession, and conservation methods like In-situ (national parks) and Ex-situ (gene banks)."
+                    },
+                    {
+                        title: "Unit II: Environmental Pollution",
+                        content: "Focuses on causes and prevention of air, water, soil, and noise pollution, alongside management of solid, hazardous, and E-waste."
+                    },
+                    {
+                        title: "Unit III: Renewable Sources of Energy",
+                        content: "Explores new energy sources including solar, wind, hydrogen, ocean thermal (OTEC), and tidal energy."
+                    },
+                    {
+                        title: "Unit IV: Sustainability and Management",
+                        content: "Introduces Sustainable Development Goals (SDGs), the concept of Carbon Footprints/Credits, and the transition from unsustainability to sustainability."
+                    },
+                    {
+                        title: "Unit V: Sustainability Practices",
+                        content: "Discusses the Circular Economy, 5R concepts (Refuse, Reduce, Reuse, Repurpose, Recycle), ISO 14001 standards, and green engineering for sustainable urbanization."
+                    }
+                ],
+                lab: null
+            }
+        };
+
+        // Get subject code from URL parameter
+        function getSubjectCodeFromURL() {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get('code');
+        }
+
+        // Display subject details
+        function displaySubjectDetails() {
+            const subjectCode = getSubjectCodeFromURL();
+            const subject = syllabusData[subjectCode];
+            const contentDiv = document.getElementById('subjectContent');
+            
+            if (!subject) {
+                contentDiv.innerHTML = `
+                    <div class="section">
+                        <div class="subject-header">
+                            <div class="subject-title">Subject Not Found</div>
+                            <div class="subject-info">The requested subject could not be found.</div>
+                        </div>
+                        <div style="text-align: center; padding: 30px 0;">
+                            <p>Please return to the home page and select a valid subject.</p>
+                        </div>
+                    </div>
+                `;
+                document.title = "Subject Not Found - B.Tech IT Syllabus";
+                return;
+            }
+            
+            let unitsHTML = '';
+            subject.units.forEach((unit, index) => {
+                unitsHTML += `
+                    <div class="unit-item" style="animation-delay: ${index * 0.1}s">
+                        <div class="unit-title">${unit.title}</div>
+                        <div class="unit-content">${unit.content}</div>
+                    </div>
+                `;
+            });
+            
+            let labHTML = '';
+            if (subject.lab) {
+                labHTML = `
+                    <div class="section lab-section">
+                        <div class="lab-title">Practical Exercises (Lab Components)</div>
+                        <div class="lab-content">${subject.lab}</div>
+                    </div>
+                `;
+            }
+            
+            contentDiv.innerHTML = `
+                <div class="subject-header">
+                    <div class="subject-title">${subject.code} – ${subject.name}</div>
+                    <div class="subject-info">B.Tech Information Technology | SINCET</div>
+                </div>
+                
+                <div class="section" style="animation-delay: 0.2s">
+                    <div class="section-title">Time Schedule</div>
+                    <div class="section-content">${subject.overview}</div>
+                </div>
+                
+                <div class="section" style="animation-delay: 0.3s">
+                    <div class="section-title">Syllabus Units</div>
+                    <div class="units-list">
+                        ${unitsHTML}
+                    </div>
+                </div>
+                
+                ${labHTML}
+            `;
+            
+            // Update page title
+            document.title = `${subject.code} - ${subject.name} | B.Tech IT Syllabus | SINCET`;
+        }
+
+        // Initialize the page with a slight delay for better animation
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(displaySubjectDetails, 500);
+        });
+    </script>
+</body>
+</html>
